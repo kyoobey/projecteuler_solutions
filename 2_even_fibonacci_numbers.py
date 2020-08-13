@@ -13,7 +13,7 @@ def main(l):
 		fib.append(4*fib[-1]+fib[-2])       # aparently i noticed the pattern long ago ...
 	print(sum(fib[:-1]))
 	return sum(fib[:-1])
-
+# ~35µ
 
 
 main(4_000_000)

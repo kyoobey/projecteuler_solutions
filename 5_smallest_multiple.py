@@ -44,7 +44,7 @@ def main(N):
 
 
 ################################################
-# approach 1 - best ~21µ
+# old approach - best ~21µ
 
 
 
@@ -55,7 +55,7 @@ def main(N):
 # 	def _lcm(a, b): return (a*b)//_hcf(a, b)
 # 	return reduce(lambda a,b : _lcm(a, b), range(2, n))
 # ~25µ
-# same code as below (line 45 - 53), but runs faster
+# same code as below (line 71 - 79), but runs faster
 # apperently calling functions in python takes ~5µ
 # update:
 ########################

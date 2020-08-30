@@ -1,6 +1,6 @@
+from time import time
 
 def timer(f):
-	from time import time
 	def wrapper(*a):
 		s = time()
 		o = f(*a)

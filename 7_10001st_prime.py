@@ -24,7 +24,7 @@ def main(N):
 		elif primes[p]:
 			P = [p, P[1]+1]
 			for _ in range(p*2, n, p): primes[_] = False
-	return P
+	return P[0]
 	# return P, [_ for _ in range(2,len(primes)) if primes[_]][N+400]
 	# return [_ for _ in range(2,len(primes)) if primes[_]][N-1]
 # ~20m

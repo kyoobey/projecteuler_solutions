@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 
 
 from lib import timer
@@ -8,13 +8,6 @@ from lib import timer
 @timer
 def main(nums):
 	return str(sum(nums))[:10]
-
-
-
-
-
-
-
 
 
 nums = [int(i) for i in """37107287533902102798797998220837590246510135740250

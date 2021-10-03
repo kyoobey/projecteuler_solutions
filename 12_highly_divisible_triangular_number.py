@@ -8,6 +8,57 @@ from functools import reduce
 
 
 
+
+
+################################################
+####### doesn't work
+
+# def prime_table(N):
+# 	n = N*11
+# 	P = [-1,1]
+# 	primes = [True]*n
+# 	l = []
+
+# 	for p in range(3,n,2):
+# 		if P[1] == N: break
+# 		elif primes[p]:
+# 			l.append(p)
+# 			P = [p, P[1]+1]
+# 			for _ in range(p*2, n, p): primes[_] = False
+# 	return l
+
+
+# @timer
+# def main(n):
+# 	n = 3
+# 	Dn = 2
+# 	cnt = 0
+# 	primes = prime_table(100000)
+# 	while cnt < n:
+# 		n += 1
+# 		n1 = n
+# 		if n1%2==0: n1=n1/2
+# 		Dn1 = 1
+# 		for p in primes:
+# 			if p*p > n1:
+# 				Dn1 = 2*Dn1
+# 				break
+# 			exponent = 1
+# 			while n1 % p == 0:
+# 				exponent+=1
+# 				n1 = n1/p
+# 			if exponent > 1:
+# 				Dn1 = Dn1*exponent
+# 			if n1 == 1: break
+# 		cnt = Dn*Dn1
+# 		Dn=Dn1
+# 	return n*(n-1)/2
+
+
+
+
+
+
 ################################################
 def prime_factors(n):
 	l=[]
